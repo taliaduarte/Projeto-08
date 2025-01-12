@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-title: 'Leckerli One', serif;
+    --font-family-head: 'Baloo 2', serif;
+    --font-family-body: 'Open Sans', serif; 
+
+    --text-title: 400 2.5rem/1.5 var(--font-family-title);
+
+    --text-head-sm: 800 1.75rem/1.5 var(--font-family-head) ;
+    --text-head-md:  800 1.125rem/1.5 var(--font-family-head);
+
+    --text-body-md:  500 1rem/1.5 var(--font-family-body);
+    --text-body-sm: 500 .875rem/1.5 var(--font-family-body);
+    --text-body-xs: 500 .75rem/1.5 var(--font-family-body);
+
+    --text-title: #FF598B;
+    --text-head: #F9F9F9;
+    --text-body: #C8CDD0;
+}
+
+body {
+    overflow: hidden;
+
+  }
+
+
