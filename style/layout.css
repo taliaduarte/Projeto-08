@@ -1,55 +1,61 @@
 #app {
     display: grid;
-    grid-template-columns: 51.25% 48.75%; /*regra de tres para chegar a porcentagem foi (656*100)/1280, sendo 656 weith e 1280 soma dos dois*/
-
+    grid-template-columns: 43.75% 56.25% ; /*regra de três para chegar a porcentagem foi (560*100)/1280, sendo 656 weith e 1280 soma dos dois*/
     height: 100vh;
     overflow: hidden;
+
+    padding-inline: 5rem;
 }
 
 aside  {
-    background: url(../assets/Background.png) no-repeat;
-    height: auto;
-    padding: 4rem;
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 1.5rem;
+    margin: 3rem;
 
+
+    width: 400px;
+    height: 728px;
+    padding: 2rem;
 }
 
-header {
-    margin: 5rem; /*espaço entre conteúdo e as bordas página*/
+
+aside .aside-container {
+    max-width: 21rem; /*336w divide por 16*/
+    margin-right: 2rem;
+    
 }
 
-.aside-container {
-    text-align: left; /* Centraliza o conteúdo dentro do aside */
-    padding: 4rem; /* Adiciona espaçamento interno */
-    max-width: auto;
+.aside-container h1 {
+    font: 400 2rem/1.25 var(--font-family-title);
+    color: var(--text-color-title);
+    padding-top: 1.5rem;
 }
 
-.aside-container header h1 {
-    font: 500 2.5rem/1.25 var(--font-family-title);
-    color: var(--text-title);
-    font-size: 4.5rem; /* Aumenta o tamanho da fonte do h1 (40px) */
-    margin: 1.5rem; /* Adiciona espaçamento acima do título */
+.aside-container p {
+    font: 300 1rem/1.20 var(--text-body-sm);
+    color: var(--text-color-body);
+    letter-spacing: .10rem;
+    padding-top: .75rem;
 }
 
-.aside-container header p {
-    font: 800 2.5rem/1.25 var(--font-family-head);
-    color: var(--text-head);
-    font-size: 1.25rem; /* Aumenta o tamanho do parágrafo (20px) */
-    margin: 1.5rem; /* Espaçamento entre o título e o parágrafo */
-}
-
-.aside-container img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: .5rem;
-    padding: 1rem;
-}
 
 main .main-container {
-    max-width: 33rem; /*528 dividindo por 16 = 33rem*/
+   max-width: 35rem;
+   margin: auto; /*centralizar o formulário*/
    
 }
 
 main {
-    overflow: auto;
-    padding: 4rem;
+    
+    background-color: var(--color-shape-body);
+    background-position: center;
+    overflow: auto; /*ter a rolagem tela*/
+    border-radius: 1.5rem;
+    margin: 3rem;
+
+    padding-top: 5rem;
+    
 }
