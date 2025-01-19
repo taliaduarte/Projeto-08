@@ -1,9 +1,27 @@
 form {
     background-color: var(--color-shape-body);
-    margin-top: 3rem;
+
+}
+legend {
+    font: 500 1.1rem/1.2 var(--font-family-head);
+    color: var(--text-color-head);
+    gap: 1rem;
 }
 
 .main-container h2 {
     font: 800 1.5rem/1.2 var(--font-family-head);
     color: var(--text-color-head);
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
 }

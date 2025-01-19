@@ -24,14 +24,165 @@
 
                 <form action="para onde enviar o formulário" method="post" enctype="multipart/form-data">
                     <fieldset class="about-event">
-                        <div>
+                        <div class="subtitle">
                             <img src="assets/calendar.svg" alt="">
                             <legend>Sobre o evento</legend>
                         </div>
 
+                        <div>
+                            <label for="title">Título</label>
+                            <input id="title" name="title" type="text" lang="pt-BR" placeholder="Nome do evento">
+                        </div>
+
+                        <div>
+                            <div class="grid-wrapper-1">
+                                <label for="date">Início</label>
+                                <input id="date" name="date" type="text" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+
+                            <div class="grid-wrapper-1">
+                                <label for="date">Fim</label>
+                                <input id="date" name="date" type="text" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+                            
+                            <div class="grid-wrapper-2">
+                                <label for="type">Tipo</label>
+                                <div class="radio-wrapper">
+                                    <div class="radio-modalidade">
+                                       <div class="radio-image"></div>
+                                       <input type="radio" name="modalidade" value="presencial" id="presencial">
+                                        <img src="assets/building-2.svg" alt="ícone prédio">
+                                       <label for="presencial">Presencial</label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-wrapper">
+                                    <div class="radio-modalidade">
+                                       <div class="radio-image"></div>
+                                       <input type="radio" name="modalidade" value="online" id="online">
+                                        <img src="assets/video.svg" alt="ícone vídeo">
+                                       <label for="online">Online</label>
+                                    </div>
+                                </div>
+
+                                <div class="grid-wrapper-2">
+                                    <label for="local">Local</label>
+                                    <input id="local" name="local" type="local" placeholder="Link ou endereço">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="30" rows="6" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                        
+                    </fieldset>
                     
+                    <fieldset class="personalizar">
+                        <div class="subtitle">
+                            <img src="assets/calendar.svg" alt="">
+                            <legend>Personalização</legend>
+                        </div>
+
+                        <label for="type">Cor principal</label>
+                            <div class="cores flex">
+                                
+                                <div>
+                                    <div class="radio-colors">
+                                        <input type="radio" id="blue" name="color">
+                                        <label for="blue">
+                                            <img src="assets/Circle1.svg" alt="Cor azul" class="radio-image">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="navy">  
+                                       <label for="navy">
+                                            <img src="assets/Circle2.svg" alt="ícone círculo" class="radio-image">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="purple">
+                                       <label for="purple">
+                                            <img src="assets/Circle3.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="fuschia"> 
+                                       <label for="fuschia">
+                                            <img src="assets/Circle4.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="pink">
+                                       <label for="pink">
+                                            <img src="assets/Circle5.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="red">         
+                                       <label for="red">
+                                            <img src="assets/Circle6.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="orange">
+                                       <label for="orange">
+                                            <img src="assets/Circle7.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="lime">  
+                                       <label for="lime">
+                                            <img src="assets/Circle8.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="green"> 
+                                       <label for="green">
+                                            <img src="assets/Circle9.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="radio-colors">
+                                       <input type="radio" name="color" id="cyan">      
+                                       <label for="cyan">
+                                            <img src="assets/Circle10.svg" alt="ícone círculo">
+                                       </label>
+                                    </div>
+                                </div>
+
+                            </div>
 
                     </fieldset>
+                    
                 </form>
             </div>
         </main>

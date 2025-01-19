@@ -1,0 +1,45 @@
+label {
+    font: var(--text-heading-sm); /* Estilo do texto */
+    color: var(--text-color-body); /* Cor do texto */
+    text-align: left;
+    padding-top: .75rem;
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.input-wrapper {
+    display: block;
+    align-self: auto;
+    
+}
+
+input, textarea, select {
+    background-color: var(--input-stroke);
+    border: 1px solid var(--input-stroke);
+    width: 100%;
+    
+    border-radius: 0.5rem;
+
+    padding: .75rem;
+    font: var(--text-body-sm);
+
+    
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 0.1rem solid var(--brand-light); /* Cor direta */
+    border: 0.1rem solid var(--brand-light);
+}
+
+
+.radio-inner input, 
+.radio-inner input:focus, 
+.radio-inner input:hover {
+    all: unset;
+    
+    inset: 0;
+}
+
+input:invalid {
+    border: 0.125rem solid var(--semantic-error);
+}

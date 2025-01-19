@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -11,28 +11,43 @@
     --font-family-head: 'Baloo 2', serif;
     --font-family-body: 'Open Sans', serif; 
 
-    --text-title: 400 2.5rem/1.5 var(--font-family-title);
+    --text-title: 600 2.5rem/.75 var(--font-family-title);
 
-    --text-head-sm: 800 1.75rem/1.5 var(--font-family-head) ;
-    --text-head-md:  800 1.125rem/1.5 var(--font-family-head);
+    --text-heading-sm: 300 1.125rem/1.75 var(--font-family-head) ;
+    --text-heading-md:  400 1.75rem/1.75 var(--font-family-head);
 
-    --text-body-md:  500 1rem/1.5 var(--font-family-body);
-    --text-body-sm: 300 .875rem/1.5 var(--font-family-body);
-    --text-body-xs: 500 .75rem/1.5 var(--font-family-body);
+    --text-body-md:  500 1rem/1.70 var(--font-family-body);
+    --text-body-sm: 500 .875rem/1.70 var(--font-family-body);
+    --text-body-xs: 500 .75rem/1.70 var(--font-family-body);
 
     --text-color-title: #FF598B;
     --text-color-head: #F9F9F9;
     --text-color-body: #C8CDD0;
 
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+
+    --stroke-default: #D6D3D1;
+
     --color-shape-background: #131516;
     --color-shape-body: #212427;
+    --color-shape-button: #2d3136;
+    --color-shape-hover: #383d42;
+
+    --semantic-error: #ff5959;
+    --brand-light: #59b2ff;
+    --brand-mid: #3487cf;
+    --brand-dark: #1d6fb6;
 }
 
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden; /*sem rolagem e sem transbordar*/
+    
     background-color: var(--color-shape-background);
   }
 
+
+ 
 

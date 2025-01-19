@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 43.75% 56.25% ; /*regra de três para chegar a porcentagem foi (560*100)/1280, sendo 656 weith e 1280 soma dos dois*/
     height: 100vh;
-    overflow: hidden;
+    
 
     padding-inline: 5rem;
 }
@@ -13,12 +13,12 @@ aside  {
     background-position: center;
     background-size: contain;
     border-radius: 1.5rem;
-    margin: 3rem;
-
+    margin-top: 3rem;
 
     width: 400px;
     height: 728px;
     padding: 2rem;
+   
 }
 
 
@@ -26,12 +26,15 @@ aside .aside-container {
     max-width: 21rem; /*336w divide por 16*/
     margin-right: 2rem;
     
+    
 }
 
 .aside-container h1 {
-    font: 400 2rem/1.25 var(--font-family-title);
+    font: 500 2.5rem/1.5 var(--font-family-title);
     color: var(--text-color-title);
     padding-top: 1.5rem;
+
+    
 }
 
 .aside-container p {
@@ -41,12 +44,6 @@ aside .aside-container {
     padding-top: .75rem;
 }
 
-
-main .main-container {
-   max-width: 35rem;
-   margin: auto; /*centralizar o formulário*/
-   
-}
 
 main {
     
@@ -58,4 +55,50 @@ main {
 
     padding-top: 5rem;
     
+    
+}
+
+main .main-container h2 {
+    font: var(--text-heading-md);
+    color: var(--text-color-head);
+    text-align: left;
+    display: block;
+    padding-bottom: 2.5rem;
+    
+}
+
+
+main .main-container {
+   max-width: 35rem;
+   margin: 0  auto; /*centralizar o formulário*/
+   padding: 1.5rem;
+}
+
+
+.subtitle {
+    display: flex;
+    align-items: center; /*alinhar o ícone e o texto*/
+    padding-bottom: 1.5rem;
+}
+
+.subtitle > img {
+    padding-right: .75rem;
+    
+   
+}
+
+.flex-container {
+    display: flex; /* Torna os elementos filhos flexíveis e alinhados horizontalmente */
+    gap: 2rem; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.grid-wrapper-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} 
+
+.grid-wrapper-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

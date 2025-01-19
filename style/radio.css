@@ -1,0 +1,81 @@
+.radio-modalidade {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: .75rem;
+    
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 100%; /* Limita a largura máxima ao tamanho do contêiner */
+    cursor: pointer;
+}
+
+.radio-modalidade input[type="radio"] {
+    display: none;
+}
+
+
+    
+.radio-wrapper {
+    display: flex;
+    flex-direction: column;  /*Mantém o conteúdo interno empilhado */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    gap: 0.5rem; /* Espaçamento interno entre ícone e texto*/ 
+}
+
+.radio-inner:hover .radio-image, 
+.radio-inner:focus-within .radio-image {
+    background-image: url(../../assets/icons/radio-hover.svg);
+}
+
+.cores {
+    display: flex;
+    
+    gap: .2rem; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 100%; /* Limita a largura máxima ao tamanho do contêiner */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.radio-colors {
+    appearance: none;
+    max-width: calc(20% - 0px); /* Limita a largura máxima */
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.radio-colors input[type="radio"] {
+    display: none;
+}
+
+/* Estiliza o label como botão clicável */
+.radio-colors label {
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid transparent; /* Borda padrão invisível */
+    border-radius: 50%; /* Garante borda circular */
+    padding: 0; /* Remove qualquer espaçamento interno */
+    transition: border-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Ajusta a imagem para garantir que o label seja do mesmo tamanho */
+.radio-colors label img {
+    display: block;
+    border-radius: 50%; /* Certifica-se de que a imagem é circular */
+}
+/* Adiciona borda ou destaque no estado selecionado */
+.radio-colors input[type="radio"]:checked + label {
+    border: 1px solid var(--brand-light); /* Cor da borda */
+    border-radius: 100%;
+    
+}
+
+.radio-colors:focus, .radio-colors:focus-within {
+    border: 2px solid var(--brand-light);
+}
+
