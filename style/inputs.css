@@ -5,6 +5,7 @@ label {
     padding-top: .75rem;
     display: block;
     margin-bottom: .25rem;
+    gap: 2rem;
 }
 
 .input-wrapper {
@@ -13,7 +14,19 @@ label {
     
 }
 
+input[type="date"], 
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    font: var(--text-body-md);
+    width: 100%; /* Garante que todos os inputs tenham o mesmo tamanho */
+    box-sizing: border-box;
+}
+
 input, textarea, select {
+    font: var(--text-body-md);
+    color: var(--input-placeholder);
     background-color: var(--input-stroke);
     border: 1px solid var(--input-stroke);
     width: 100%;
@@ -42,4 +55,10 @@ input:focus, select:focus, textarea:focus {
 
 input:invalid {
     border: 0.125rem solid var(--semantic-error);
+}
+
+input[type="date"] {
+    color: var(--input-placeholder);
+    
+    
 }

@@ -35,44 +35,47 @@
                         </div>
 
                         <div>
-                            <div class="grid-wrapper-1">
+                        <div class="periodo flex">
+                            <div class="flex-1">
                                 <label for="date">Início</label>
-                                <input id="date" name="date" type="text" placeholder="DD/MM/AAAA, --:--">
+                                <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
                             </div>
 
-                            <div class="grid-wrapper-1">
+                            <div  class="flex-1">
                                 <label for="date">Fim</label>
-                                <input id="date" name="date" type="text" placeholder="DD/MM/AAAA, --:--">
+                                <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
                             </div>
-                            
-                            <div class="grid-wrapper-2">
-                                <label for="type">Tipo</label>
-                                <div class="radio-wrapper">
-                                    <div class="radio-modalidade">
-                                       <div class="radio-image"></div>
-                                       <input type="radio" name="modalidade" value="presencial" id="presencial">
-                                        <img src="assets/building-2.svg" alt="ícone prédio">
-                                       <label for="presencial">Presencial</label>
+                        </div>
+
+                            <div class="periodo flex">
+                                <div>
+                                    <label>Tipo</label>
+                                    <div class="radio-container">
+                                        <div class="radio-item flex-1">
+                                            <input type="radio" name="modalidade" value="presencial" id="presencial">
+                                            <label for="presencial">
+                                                <img src="assets/building-normal.svg" alt="Ícone prédio">
+                                                Presencial
+                                            </label>
+                                        </div>
+                                
+                                        <div class="radio-item flex-1">
+                                            <input type="radio" name="modalidade" value="online" id="online">
+                                            <label for="online">
+                                                <img src="assets/video-normal.svg" alt="Ícone vídeo">
+                                                Online
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="radio-wrapper">
-                                    <div class="radio-modalidade">
-                                       <div class="radio-image"></div>
-                                       <input type="radio" name="modalidade" value="online" id="online">
-                                        <img src="assets/video.svg" alt="ícone vídeo">
-                                       <label for="online">Online</label>
-                                    </div>
-                                </div>
-
-                                <div class="grid-wrapper-2">
+                               
+                                <div class="radio-wrapper flex-1">
                                     <label for="local">Local</label>
                                     <input id="local" name="local" type="local" placeholder="Link ou endereço">
                                 </div>
+                                
                             </div>
-
                         </div>
-
                         <div>
                             <label for="description">Descrição</label>
                             <textarea name="description" id="description" cols="30" rows="6" placeholder="Escreva sobre os detalhes do evento"></textarea>
@@ -183,6 +186,7 @@
 
                     </fieldset>
                     
+                
                 </form>
             </div>
         </main>

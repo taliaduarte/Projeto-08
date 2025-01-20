@@ -20,8 +20,62 @@ fieldset {
     margin: auto;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
+.periodo {
+    flex-flow: row;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+
+.radio-container {
+    display: flex; /* Coloca os itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid var(--input-stroke); /* Borda para destaque */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding-inline: 0.5rem;
+    
+}
+
+.radio-item {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Alinha ícone e texto */
+    margin-block: 0.2rem;
+    margin-inline: 0.2rem;
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+
+.radio-item input[type="radio"] {
+    display: none; /* Oculta o rádio padrão */
+}
+
+.radio-item label {
+    display: flex;
+    align-items: center;
+    font: var(--text-body-sm);
+    gap: 0.5rem;
+}
+
+.radio-item img {
+    width: 20px; /* Ajuste do tamanho do ícone */
+    height: 20px;
+}
+
+.radio-item input[type="radio"]:checked + label {
+    background-color: var(--input-stroke); /* Cor de fundo no estado selecionado */
+    color: var();
+    border-radius: 0.2rem; /* Bordas arredondadas */
+    padding: 0.3rem;
+    
+}
+
+/* Trocar a imagem quando o presencial for selecionado */
+.radio-item input#presencial:checked + label img {
+    content: url(../assets/building-check.svg); 
+}
+
+.radio-item input#online:checked + label img {
+    content: url(../assets/video-check.svg); /* Troca a imagem para a opção "online" */
 }

@@ -13,7 +13,7 @@ aside  {
     background-position: center;
     background-size: contain;
     border-radius: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     width: 400px;
     height: 728px;
@@ -51,7 +51,7 @@ main {
     background-position: center;
     overflow: auto; /*ter a rolagem tela*/
     border-radius: 1.5rem;
-    margin: 3rem;
+    margin: 1rem;
 
     padding-top: 5rem;
     
@@ -93,12 +93,20 @@ main .main-container {
     align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
-.grid-wrapper-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} 
+.flex {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
 
-.grid-wrapper-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.flex-1 {
+    flex: 1;
+   
+    
 }
+
+.flex-2 {
+    flex: 2;
+}
+
+  
