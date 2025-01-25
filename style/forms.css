@@ -79,3 +79,43 @@ fieldset {
 .radio-item input#online:checked + label img {
     content: url(../assets/video-check.svg); /* Troca a imagem para a opção "online" */
 }
+
+.container-tema {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 0.5rem;
+    margin: auto;
+
+    font: var(--text-body-md);
+    color: var(--text-color-body);
+    
+}
+
+.container-tema img {
+    border-radius: 0.65rem;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+.temas-evento {
+    background-color: var(--input-stroke);
+    border-radius: .60rem;
+    text-align: center;
+    
+}
+
+.temas-evento input[type="radio"]:checked + label {
+    border: 2px solid var(--brand-light); /* Cor da borda */
+    border-radius: .60rem;
+    
+}
+
+.temas-evento:focus, .temas-evento:focus-within {
+    border: 2px solid var(--brand-light);
+    
+}
+
+.temas-evento input[type="radio"] {
+    display: none;
+}

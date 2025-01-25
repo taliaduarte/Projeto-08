@@ -2,21 +2,22 @@
     display: grid;
     grid-template-columns: 43.75% 56.25% ; /*regra de três para chegar a porcentagem foi (560*100)/1280, sendo 656 weith e 1280 soma dos dois*/
     height: 100vh;
-    
 
-    padding-inline: 5rem;
+    margin: 1rem;
+    padding-inline: 9rem;
+    gap: 7rem;
 }
 
 aside  {
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-radius: 1.5rem;
-    margin-top: 1rem;
+    
+    gap: 2.5rem;
 
-    width: 400px;
-    height: 728px;
+    height: 100%;
     padding: 2rem;
    
 }
@@ -51,10 +52,7 @@ main {
     background-position: center;
     overflow: auto; /*ter a rolagem tela*/
     border-radius: 1.5rem;
-    margin: 1rem;
-
     padding-top: 5rem;
-    
     
 }
 
@@ -63,22 +61,23 @@ main .main-container h2 {
     color: var(--text-color-head);
     text-align: left;
     display: block;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
     
 }
 
 
 main .main-container {
    max-width: 35rem;
-   margin: 0  auto; /*centralizar o formulário*/
-   padding: 1.5rem;
+   margin: auto; /*centralizar o formulário*/
+   padding: 0.5rem;
 }
 
 
 .subtitle {
     display: flex;
     align-items: center; /*alinhar o ícone e o texto*/
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
 }
 
 .subtitle > img {

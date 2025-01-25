@@ -19,10 +19,10 @@
     display: none;
 }
     
-.radio-wrapper {
-    display: flex;
-    flex-direction: column;  /*Mantém o conteúdo interno empilhado */
-     
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .radio-inner:hover .radio-image, 
@@ -32,18 +32,23 @@
 
 .cores {
     display: flex;
-    
     gap: .2rem; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+     /* Centraliza os itens horizontalmente */
     max-width: 100%; /* Limita a largura máxima ao tamanho do contêiner */
     cursor: pointer;
     overflow: hidden;
 }
 
+.cores img {
+    border-radius: 0.75rem;
+    max-width: 100%;
+}
+
 .radio-colors {
+    flex: 1 1 calc(10% - 0.5rem); /*deixar as divs no mesmo espaço, ocupando todo o container*/
     appearance: none;
     max-width: calc(20% - 0px); /* Limita a largura máxima */
-    text-align: center;
+
     cursor: pointer;
 
 }
