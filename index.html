@@ -35,17 +35,17 @@
                         </div>
 
                         <div>
-                        <div class="periodo flex">
-                            <div class="flex-1">
-                                <label for="date">Início</label>
-                                <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
-                            </div>
+                            <div class="periodo flex">
+                                <div class="flex-1">
+                                    <label for="date">Início</label>
+                                    <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
+                                </div>
 
-                            <div  class="flex-1">
-                                <label for="date">Fim</label>
-                                <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
+                                <div  class="flex-1">
+                                    <label for="date">Fim</label>
+                                    <input id="date" name="date" type="date" placeholder="DD/MM/AAAA, --:--">
+                                </div>
                             </div>
-                        </div>
 
                             <div class="periodo grid-container">
                                 <div>
@@ -234,7 +234,7 @@
                                 <input type="radio" id="halloween" name="tema-evento" />
                                 <label for="halloween">
                                     <img src="assets/image/Image10.png" alt="halloween" />
-                                    <p>CHalloween</p>
+                                    <p>Halloween</p>
                                 </label>
                             </div>
                             <div class="temas-evento">
@@ -248,13 +248,68 @@
                                 <input type="radio" id="outros" name="tema-evento" />
                                 <label for="outros">
                                     <img src="assets/image/Image12.png" alt="outros" />
-                                    <p>Chá de bebê</p>
+                                    <p>Outros</p>
                                 </label>
                             </div>
                         </div>
+
+                        <div class="input-container flex">
+                            <!-- Container principal flex -->
+                            <div class="flex-1">
+                                <label>Estilo</label>
+                                <div class="flex-container">
+                                    <div class="radio-estilo">
+                                        <div class="input-estilo">
+                                            <input type="button" name="estilo" id="dark-mode-input">
+                                            <input type="button" name="estilo" id="light-mode-input">
+                                        </div>
+                                    </div>
+                                    <div class="input-estilo-2">
+                                        <label class="input-estilo">Escuro</label>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Foto de capa -->
+                            <div class="flex-2">
+                                <label>Foto de capa</label>
+                                <div class="radio-file">
+                                    <label for="file">
+                                        <img src="assets/icone-arquivo.svg" alt="Ícone arquivo">
+                                        Selecionar
+                                    </label>
+                                    <input type="file" name="file" value="file" id="file-dark">
+                                    <span>Nenhum arquivo selecionado</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
                     </fieldset>
                     
-                    
+                    <fieldset class="contato">
+                        <div class="subtitle">
+                            <img src="assets/calendar.svg" alt="">
+                            <legend>Dados para contato</legend>
+                        </div>
+
+                        <div>
+                            <label for="name">Nome</label>
+                            <input id="name" name="nome" type="text" lang="pt-BR" placeholder="Nome completo" required>
+                        </div>
+
+                        <div class="periodo flex">
+                            <div class="flex-1">
+                                <label for="email">Início</label>
+                                <input id="email" name="email" type="email" placeholder="exemplo@email.com">
+                            </div>
+
+                            <div  class="flex-1">
+                                <label for="number">Fim</label>
+                                <input id="number" name="number" type="tel" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                    </fieldset>
                 
                 </form>
             </div>

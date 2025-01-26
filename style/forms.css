@@ -23,7 +23,7 @@ fieldset {
 .periodo {
     flex-flow: row;
     gap: 1rem;
-    margin: auto;
+    padding-top: .75rem;
 }
 
 
@@ -33,17 +33,17 @@ fieldset {
     align-items: center; /* Centraliza verticalmente */
     border: 1px solid var(--input-stroke); /* Borda para destaque */
     border-radius: 0.5rem; /* Bordas arredondadas */
-    padding-inline: 0.5rem;
+    
     
 }
 
 .radio-item {
-    flex: 1;
+    
     display: flex;
-    align-items: center; /* Alinha ícone e texto */
-    margin-block: 0.2rem;
-    margin-inline: 0.2rem;
-    cursor: pointer; /* Cursor de ponteiro */
+    margin: auto;
+    align-items: center;
+    padding: 0.45rem;
+    cursor: pointer;
 }
 
 
@@ -55,19 +55,23 @@ fieldset {
     display: flex;
     align-items: center;
     font: var(--text-body-sm);
-    gap: 0.5rem;
+    
 }
 
 .radio-item img {
     width: 20px; /* Ajuste do tamanho do ícone */
     height: 20px;
+
 }
+
+
 
 .radio-item input[type="radio"]:checked + label {
     background-color: var(--input-stroke); /* Cor de fundo no estado selecionado */
     color: var();
     border-radius: 0.2rem; /* Bordas arredondadas */
-    padding: 0.3rem;
+   
+    margin: 0;
     
 }
 
@@ -85,7 +89,6 @@ fieldset {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     gap: 0.5rem;
-    margin: auto;
 
     font: var(--text-body-md);
     color: var(--text-color-body);
@@ -95,7 +98,7 @@ fieldset {
 .container-tema img {
     border-radius: 0.65rem;
     width: 100%;
-    padding: 0.25rem;
+    padding: 0.35rem;
 }
 
 .temas-evento {
@@ -103,6 +106,10 @@ fieldset {
     border-radius: .60rem;
     text-align: center;
     
+}
+
+.temas-evento label {
+    margin: 0;
 }
 
 .temas-evento input[type="radio"]:checked + label {

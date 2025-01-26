@@ -1,11 +1,12 @@
 #app {
     display: grid;
-    grid-template-columns: 43.75% 56.25% ; /*regra de três para chegar a porcentagem foi (560*100)/1280, sendo 656 weith e 1280 soma dos dois*/
-    height: 100vh;
+    grid-template-columns: 35% 65% ; /*regra de três para chegar a porcentagem foi (560*100)/1280, sendo 656 weith e 1280 soma dos dois*/
+    background-color: var(--color-shape-background);
 
-    margin: 1rem;
-    padding-inline: 9rem;
-    gap: 7rem;
+    padding: 1rem;
+    gap: 1.25rem;
+    overflow: hidden;
+    height: 100vh;
 }
 
 aside  {
@@ -14,26 +15,19 @@ aside  {
     background-position: center;
     background-size: cover;
     border-radius: 1.5rem;
-    
-    gap: 2.5rem;
-
-    height: 100%;
+    margin-left: auto;
     padding: 2rem;
-   
-}
-
-
-aside .aside-container {
-    max-width: 21rem; /*336w divide por 16*/
-    margin-right: 2rem;
+    width: 33rem; /*se espalhar no container a img de fundo*/
     
     
 }
 
-.aside-container h1 {
+
+
+h1 {
     font: 500 2.5rem/1.5 var(--font-family-title);
     color: var(--text-color-title);
-    padding-top: 1.5rem;
+    margin-bottom: 0.25rem;
 
     
 }
@@ -42,18 +36,18 @@ aside .aside-container {
     font: 300 1rem/1.20 var(--text-body-sm);
     color: var(--text-color-body);
     letter-spacing: .10rem;
-    padding-top: .75rem;
+    padding-block: .75rem;
 }
 
 
 main {
     
     background-color: var(--color-shape-body);
-    background-position: center;
     overflow: auto; /*ter a rolagem tela*/
     border-radius: 1.5rem;
-    padding-top: 5rem;
-    
+    padding-top: 3rem;
+    padding-inline: 8rem;
+    width: 98%;
 }
 
 main .main-container h2 {
@@ -66,11 +60,6 @@ main .main-container h2 {
 }
 
 
-main .main-container {
-   max-width: 35rem;
-   margin: auto; /*centralizar o formulário*/
-   padding: 0.5rem;
-}
 
 
 .subtitle {
@@ -95,7 +84,7 @@ main .main-container {
 .flex {
     display: flex;
     align-items: center;
-    flex: 1;
+    
   }
 
 .flex-1 {
@@ -108,4 +97,3 @@ main .main-container {
     flex: 2;
 }
 
-  
