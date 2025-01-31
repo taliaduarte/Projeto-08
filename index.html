@@ -296,6 +296,10 @@
                         <div>
                             <label for="name">Nome</label>
                             <input id="name" name="nome" type="text" lang="pt-BR" placeholder="Nome completo" required>
+                            <div class="error">
+                                <img src="assets/alert-error.svg" alt="ícone de alerta vermelho">
+                                <span>Campo obrigatório</span>
+                            </div>
                         </div>
 
                         <div class="periodo flex">
@@ -309,8 +313,37 @@
                                 <input id="number" name="number" type="tel" placeholder="(99) 99999-9999">
                             </div>
                         </div>
+
+                        <hr> <!--tag vazia fazer a linha-->
                     </fieldset>
-                
+
+                    <div >
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input id="termos" name="termos" type="checkbox" lang="pt-BR">
+                            <label for="termos">Li e concordo com os <a href="http://">Termos e Condições</a> e com a <a href="http://">Política de Privacidade</a></label>
+                        </div>
+                    
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input id="atualizacoes-email" name="atualizacoes-email" type="checkbox" lang="pt-BR">
+                            <label for="atualizacoes-email">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+                    
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input id="atualizacoes-sms" name="atualizacoes-sms" type="checkbox" lang="pt-BR">
+                            <label for="atualizacoes-sms">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </div>
+                    
+                    <div class="actions-wrapper">
+                        
+                        <button class="btn-primary" type="button">
+                            <img src="assets/icone-ticket.svg" alt="">
+                            Gerar convite
+                        </button>
+                    </div>
                 </form>
             </div>
         </main>

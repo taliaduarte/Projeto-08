@@ -126,3 +126,10 @@ fieldset {
 .temas-evento input[type="radio"] {
     display: none;
 }
+
+.actions-wrapper {
+    margin-block: 3rem;
+    display: grid;
+    justify-content: flex-end;
+    gap: 1rem;
+}

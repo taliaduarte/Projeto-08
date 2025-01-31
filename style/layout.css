@@ -97,3 +97,10 @@ main .main-container h2 {
     flex: 2;
 }
 
+hr {
+    background-color: var(--input-stroke);
+    border: 1px solid var(--input-stroke);
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+
+}
