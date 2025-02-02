@@ -43,12 +43,13 @@
 }
 
 input#switch-shadow.switch,.switch--shadow {
-    /*seletor bem especifico para tirar as configurações padrões do input checkbox*/
+    /*seletor bem específico para tirar as configurações padrões do input checkbox*/
     display: none;
     visibility: hidden;
     opacity: 0;
 }
 
+/*Estilos para criar o botão do tipo switch*/
 
 .switch + label {
     display: block;

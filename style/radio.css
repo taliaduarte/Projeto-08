@@ -83,60 +83,12 @@
     border: 2px solid var(--brand-light);
 }
 
-/*Radio checkbox */
-.input-container {
-    display: flex;
-    
-    justify-content: space-between;
-}
-
 .input-container > label {
-    display: block;
-   
+    display: block;  
 }
-
 
 .input-estilo {
     display: inline-block;
-}
-
-.input-estilo :nth-child(2) {
-    border-radius: 100%;
-    height: 50%;
-    width: 50%;
-    opacity: 0;
-    /* Quando um for checado, o outro precisa ficar transparente */
-}
-
-
-
-#dark-mode-input {
-    height: 39px;
-    width: 39px;
-}
-
-
-
-.input-estilo > input {
-    border-radius: 100%;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    gap: 1rem;
-    
-}
-
-.input-estilo-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input-estilo-2 > input {
-    border-radius: 100%;
-    height: 50%;
-    width: 50%;
-    opacity: 0;
 }
 
 input[type="file"] {

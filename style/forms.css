@@ -26,15 +26,11 @@ fieldset {
     padding-top: .75rem;
 }
 
-
-
 .radio-container {
     display: flex; /* Coloca os itens lado a lado */
     align-items: center; /* Centraliza verticalmente */
     border: 1px solid var(--input-stroke); /* Borda para destaque */
     border-radius: 0.5rem; /* Bordas arredondadas */
-    
-    
 }
 
 .radio-item {
@@ -46,7 +42,6 @@ fieldset {
     cursor: pointer;
 }
 
-
 .radio-item input[type="radio"] {
     display: none; /* Oculta o rádio padrão */
 }
@@ -54,25 +49,20 @@ fieldset {
 .radio-item label {
     display: flex;
     align-items: center;
-    font: var(--text-body-sm);
-    
+    font: var(--text-body-sm); 
 }
 
 .radio-item img {
     width: 20px; /* Ajuste do tamanho do ícone */
     height: 20px;
-
 }
-
-
 
 .radio-item input[type="radio"]:checked + label {
     background-color: var(--input-stroke); /* Cor de fundo no estado selecionado */
     color: var();
     border-radius: 0.2rem; /* Bordas arredondadas */
    
-    margin: 0;
-    
+    margin: 0;  
 }
 
 /* Trocar a imagem quando o presencial for selecionado */
@@ -87,12 +77,9 @@ fieldset {
 .container-tema {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
     gap: 0.5rem;
-
     font: var(--text-body-md);
     color: var(--text-color-body);
-    
 }
 
 .container-tema img {
@@ -105,7 +92,6 @@ fieldset {
     background-color: var(--input-stroke);
     border-radius: .60rem;
     text-align: center;
-    
 }
 
 .temas-evento label {
@@ -114,13 +100,11 @@ fieldset {
 
 .temas-evento input[type="radio"]:checked + label {
     border: 2px solid var(--brand-light); /* Cor da borda */
-    border-radius: .60rem;
-    
+    border-radius: .60rem; 
 }
 
 .temas-evento:focus, .temas-evento:focus-within {
     border: 2px solid var(--brand-light);
-    
 }
 
 .temas-evento input[type="radio"] {

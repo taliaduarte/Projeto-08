@@ -1,18 +1,15 @@
 label {
-    font: var(--text-heading-sm); /* Estilo do texto */
-    color: var(--text-color-body); /* Cor do texto */
-    
+    font: var(--text-heading-sm); 
+    color: var(--text-color-body); 
     display: block;
     /*margin-bottom: .25rem;*/
     gap: 1rem;
     padding-inline: 0.5rem
-    
 }
 
 .input-wrapper {
     display: block;
-    align-self: auto;
-    
+    align-self: auto;  
 }
 
 input[type="date"], 
@@ -30,14 +27,10 @@ input, textarea, select {
     color: var(--input-placeholder);
     background-color: var(--input-stroke);
     border: 1px solid var(--input-stroke);
-    width: 100%;
-    
+    width: 100%;   
     border-radius: 0.5rem;
-
     padding: .75rem;
     font: var(--text-body-sm);
-
-    
 }
 
 input:focus, select:focus, textarea:focus {
@@ -45,12 +38,10 @@ input:focus, select:focus, textarea:focus {
     border: 0.1rem solid var(--brand-light);
 }
 
-
 .radio-inner input, 
 .radio-inner input:focus, 
 .radio-inner input:hover {
     all: unset;
-    
     inset: 0;
 }
 
