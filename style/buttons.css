@@ -18,5 +18,5 @@ button {
 }
 
 .btn-primary:hover , .btn-primary:focus {
-    background-color: #F3541C;
+    background-color: var(--brand-light);
 }

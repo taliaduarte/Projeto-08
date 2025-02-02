@@ -95,6 +95,7 @@
    
 }
 
+
 .input-estilo {
     display: inline-block;
 }
@@ -107,14 +108,7 @@
     /* Quando um for checado, o outro precisa ficar transparente */
 }
 
-.radio-estilo {
-    border: 1px solid var(--input-stroke);
-    border-radius: 7rem;
-    height: 40px;
-    width: 100%;
-    padding-inline: 0.05rem;
-    padding-left: 0.15rem;
-}
+
 
 #dark-mode-input {
     height: 39px;
@@ -179,10 +173,6 @@ div.radio-file label {
     position: relative;
 }
 
-.radio-file img {
-    margin-right: 1rem;
-}
-
 .radio-file span {
     font: var(--text-body-sm);
     color: var(--input-placeholder);
@@ -199,4 +189,54 @@ div.radio-file label {
 /* Texto "Nenhum arquivo selecionado" */
 #file-dark:not(:valid) + span {
     display: block;
+}
+
+
+.radio-container {
+    display: flex; 
+    align-items: center;
+    border: 1px solid var(--input-stroke); 
+    border-radius: 0.5rem; 
+}
+
+.radio-item {  
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 0.45rem;
+    cursor: pointer;
+}
+
+
+.radio-item input[type="radio"] {
+    display: none; /* Oculta o rádio padrão */
+}
+
+.radio-item label {
+    display: flex;
+    align-items: center;
+    font: var(--text-body-sm);
+}
+
+.radio-item img {
+    width: 20px; /* Ajuste do tamanho do ícone */
+    height: 20px;
+
+}
+
+.radio-item input[type="radio"]:checked + label {
+    background-color: var(--input-stroke); /* Cor de fundo no estado selecionado */
+    color: var();
+    border-radius: 0.2rem; /* Bordas arredondadas */
+   
+    margin: 0;  
+}
+
+/* Trocar a imagem quando o presencial for selecionado */
+.radio-item input#presencial:checked + label img {
+    content: url(../assets/building-check.svg); 
+}
+
+.radio-item input#online:checked + label img {
+    content: url(../assets/video-check.svg); /* Troca a imagem para a opção "online" */
 }

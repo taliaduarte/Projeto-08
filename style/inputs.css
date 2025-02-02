@@ -54,12 +54,15 @@ input:focus, select:focus, textarea:focus {
     inset: 0;
 }
 
+span {
+    font-family: var(--text-body-sm);
+    color: var(--semantic-error);
+}
+
 input:invalid {
     border: 0.125rem solid var(--semantic-error);
 }
 
 input[type="date"] {
-    color: var(--input-placeholder);
-    
-    
+    color: var(--input-placeholder);  
 }
